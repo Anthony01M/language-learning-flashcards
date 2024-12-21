@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Language Learning Flashcards</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Language Learning Flashcards</h1>
+        <form id="vocabularyForm">
+            <input type="text" id="wordInput" placeholder="Enter word" required>
+            <input type="text" id="translationInput" placeholder="Enter translation" required>
+            <button type="submit">Add Vocabulary</button>
+        </form>
+        <button id="startQuizButton">Start Quiz</button>
+        <button id="viewVocabularyButton">View Vocabulary</button>
+    </div>
+    <div id="quizModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Quiz</h2>
+            <p id="quizWord"></p>
+            <input type="text" id="quizAnswerInput" placeholder="Enter translation" required>
+            <button id="submitAnswerButton">Submit Answer</button>
+            <p id="quizResult"></p>
+        </div>
+    </div>
+    <div id="vocabularyListModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Vocabulary List</h2>
+            <ul id="vocabularyList"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
